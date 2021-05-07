@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IP Address Tracker Hub</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"
+      defer
+    ></script>
+    <script type="text/javascript" src="map.js" defer></script>
+    <script type="text/javascript" src="config.js"></script>
+  </head>
+  <body>
+    <div class="ipsearch">
+      <div class="search">
+        <h1 class="search__header">IP Address Tracker</h1>
+        <form>
+          <div class="search__group">
+            <input
+              type="search"
+              name="search"
+              class="btn-search"
+              placeholder="Search for any IP address or domain"
+            />
+            <button type="submit">
+              <img
+                src="images/icon-arrow.svg"
+                alt="right-arrow"
+                class="rarrow"
+              />
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="display__output">
+        <div class="output">
+          <div class="output__group">
+            <p>ipaddress</p>
+            <div class="output__text">8.8.8.8</div>
+          </div>
+          <div class="output__group">
+            <p>location</p>
+            <div class="output__text">California</div>
+          </div>
+          <div class="output__group">
+            <p>timezone</p>
+            <div class="output__text">UTC-07:00</div>
+          </div>
+          <div class="output__group">
+            <p>isp</p>
+            <div class="output__text">Google LLC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map" class="map-container"></div>
+  </body>
+</html>
